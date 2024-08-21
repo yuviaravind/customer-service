@@ -24,6 +24,10 @@ public class CustomerService {
         return customerDao.getCustomerByEmail(email);
     }
 
+    public List<Customer> getCustomerByName(String name) {
+        return customerDao.getCustomerByName(name);
+    }
+
     public Customer postCustomer(Customer customer) {
         return customerDao.postCustomer(customer);
     }
